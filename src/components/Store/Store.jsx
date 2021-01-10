@@ -8,7 +8,6 @@ import {getBooks} from "../../redux/actions/books"
 import Preloader from "../../common/Preloader/Preloader"
 
 const Store = () => {
-    let x = 5
     const {items: books, isReady, filterBy, search} = useSelector(state => state.booksReducer)
 
     const dispatch = useDispatch()
