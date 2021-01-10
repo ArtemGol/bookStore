@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/components/Store/Filter/Filter.jsx" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1m4CLdo56aTdgaQQmBUg8PiYtKi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/common" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\react11\projects\second-project\src\common" />
+      <recent name="C:\react11\projects\second-project\src\redux\actions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\react11\projects\second-project\src\components" />
+      <recent name="C:\react11\projects\second-project\src\components\Store\NotFound" />
+      <recent name="C:\react11\projects\second-project\src\components\Store\Menu" />
+      <recent name="C:\react11\projects\second-project\src\components\Store\Filter" />
+      <recent name="C:\react11\projects\second-project\src\components\Store\BookCard" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="" />
+      <created>1608743425062</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608743425062</updated>
+      <workItem from="1608743427986" duration="1976000" />
+      <workItem from="1609583642525" duration="30132000" />
+      <workItem from="1609666962687" duration="860000" />
+      <workItem from="1609741298630" duration="35701000" />
+      <workItem from="1609834595677" duration="27639000" />
+      <workItem from="1609929362273" duration="511000" />
+      <workItem from="1609940402383" duration="2585000" />
+      <workItem from="1610004833540" duration="50958000" />
+      <workItem from="1610124613239" duration="347000" />
+      <workItem from="1610177915925" duration="682000" />
+      <workItem from="1610199786315" duration="10088000" />
+      <workItem from="1610212864455" duration="3035000" />
+      <workItem from="1610258901198" duration="19284000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
