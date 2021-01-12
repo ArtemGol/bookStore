@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Menu, Popup} from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import {useSelector} from "react-redux"
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import CartComponent from "../Card/CartComponent";
 
 const MenuComponent = () => {
@@ -16,16 +16,16 @@ const MenuComponent = () => {
     const handleItemClick = (e, {name}) => setState({activeItem: name})
     return (
         <Menu>
-            <Link to='/store'>
+            <NavLink to='/store'>
                 <Menu.Item name='browse' onClick={handleItemClick}>
                     Books store
                 </Menu.Item>
-            </Link>
-            <Link to='/admin'>
+            </NavLink>
+            <NavLink to='/admin'>
                 <Menu.Item name='browse' onClick={handleItemClick}>
                     Admin panel
                 </Menu.Item>
-            </Link>
+            </NavLink>
 
             <Menu.Menu position='right'>
 
@@ -33,7 +33,7 @@ const MenuComponent = () => {
                     Total: &ensp;<b>{totalPrice} rub.</b>
                 </Menu.Item>
 
-                <Link to='/cart'>
+                <NavLink to='/cart'>
                     <Popup
                         trigger={
                             <Menu.Item name='help' onClick={handleItemClick}>
@@ -43,7 +43,7 @@ const MenuComponent = () => {
                         content={items.map(book => <CartComponent {...book.product}/>)}
                         on='click'
                         hideOnScroll/>
-                            </Link>
+                            </NavLink>
 
             </Menu.Menu>
         </Menu>
