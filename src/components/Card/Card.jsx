@@ -2,6 +2,7 @@ import React from 'react'
 import {Button, Card, Icon, Image} from 'semantic-ui-react'
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart, removeFromCart, removeOneProduct} from "../../redux/actions/cart";
+import {Switch} from "react-router-dom";
 
 const CardMainComponent = ({title, id, image, author, price}) => {
     let dispatch = useDispatch()
@@ -18,9 +19,9 @@ const CardMainComponent = ({title, id, image, author, price}) => {
     }
     const addBook = () => {
         dispatch(addToCart(obj))
-        console.log(addedCount)
     }
     return (
+
         <Card>
             <Image src={image} wrapped ui={false}/>
             <Card.Content>
@@ -46,6 +47,7 @@ const CardMainComponent = ({title, id, image, author, price}) => {
                     </div>
                 </Card.Content>
         </Card>
+
     )
 }
 

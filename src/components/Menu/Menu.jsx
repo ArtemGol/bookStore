@@ -6,7 +6,7 @@ import {NavLink} from "react-router-dom";
 import CartComponent from "../Card/CartComponent";
 
 const MenuComponent = () => {
-    let [state, setState] = useState()
+    let [state, setState] = useState({activeItem:'store'})
     // const totalPrice = useSelector(state => state.cartReducer.items.reduce((total, book) => total + book.product.price, 0)) сумма объектов массива
     const totalPrice = useSelector(state => state.cartReducer.totalPrice)
     const count = useSelector(state => state.cartReducer.count)
@@ -14,15 +14,21 @@ const MenuComponent = () => {
 
 
     const handleItemClick = (e, {name}) => setState({activeItem: name})
+    const {activeItem} = state
     return (
         <Menu>
-            <NavLink to='/store'>
-                <Menu.Item name='browse' onClick={handleItemClick}>
+            <NavLink exact to='/'>
+                <Menu.Item name='store' onClick={handleItemClick}
+                           active={activeItem === 'store'}
+                >
+
                     Books store
                 </Menu.Item>
             </NavLink>
             <NavLink to='/admin'>
-                <Menu.Item name='browse' onClick={handleItemClick}>
+                <Menu.Item name='admin' onClick={handleItemClick}
+                           active={activeItem === 'admin'}
+                >
                     Admin panel
                 </Menu.Item>
             </NavLink>
@@ -36,7 +42,9 @@ const MenuComponent = () => {
                 <NavLink to='/cart'>
                     <Popup
                         trigger={
-                            <Menu.Item name='help' onClick={handleItemClick}>
+                            <Menu.Item name='cart' onClick={handleItemClick}
+                                       active={activeItem === 'cart'}
+                            >
                                 Cart: &ensp;<b>{count}</b>
                             </Menu.Item>
                         }

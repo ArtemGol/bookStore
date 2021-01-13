@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="" />
+    <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="delete variable">
+      <change afterPath="$PROJECT_DIR$/src/components/Alert/Alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Card/CartContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +23,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/components/Store/Filter/Filter.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1m4CLdo56aTdgaQQmBUg8PiYtKi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,11 +60,11 @@
       <recent name="C:\react11\projects\second-project\src\redux\actions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\react11\projects\second-project\src\components\Alert" />
       <recent name="C:\react11\projects\second-project\src\components" />
       <recent name="C:\react11\projects\second-project\src\components\Store\NotFound" />
       <recent name="C:\react11\projects\second-project\src\components\Store\Menu" />
       <recent name="C:\react11\projects\second-project\src\components\Store\Filter" />
-      <recent name="C:\react11\projects\second-project\src\components\Store\BookCard" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -85,10 +103,46 @@
       <workItem from="1610199786315" duration="10088000" />
       <workItem from="1610212864455" duration="3035000" />
       <workItem from="1610258901198" duration="19284000" />
+      <workItem from="1610286765451" duration="3073000" />
+      <workItem from="1610289863224" duration="3000" />
+      <workItem from="1610307334169" duration="166000" />
+      <workItem from="1610442268878" duration="6762000" />
+      <workItem from="1610523041436" duration="3154000" />
     </task>
+    <task id="LOCAL-00001" summary="delete variable">
+      <created>1610289549489</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610289549489</updated>
+    </task>
+    <task id="LOCAL-00002" summary="delete variable">
+      <created>1610445698505</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610445698505</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="delete variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete variable" />
   </component>
 </project>
