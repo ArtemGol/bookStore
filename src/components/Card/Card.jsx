@@ -1,12 +1,13 @@
 import React from 'react'
 import {Button, Card, Icon, Image} from 'semantic-ui-react'
-import {useDispatch, useSelector} from "react-redux";
-import {addToCart, removeFromCart, removeOneProduct} from "../../redux/actions/cart";
-import {Switch} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux"
+import {addToCart, removeFromCart, removeOneProduct} from "../../redux/actions/cart"
+import {showAlert} from "../../redux/actions/alert";
 
 const CardMainComponent = ({title, id, image, author, price}) => {
     let dispatch = useDispatch()
     let addedCount = useSelector(state => state.cartReducer.items.reduce((count, book) => count + (book.id === id ? book.count : 0), 0))
+    let items = useSelector(state => state.cartReducer.items)
     let obj = {title, id, image, author, price}
 
     let deleteBook = () => {
@@ -15,7 +16,13 @@ const CardMainComponent = ({title, id, image, author, price}) => {
         }
         if (addedCount===1) {
             dispatch(removeFromCart(obj))
+            dispatch(showAlert('Item delete from cart', 'green', 2))
+            if (items.length < 2) {
+                dispatch(showAlert('Cart is clear', 'blue', 3))
+            }
         }
+    console.log(items)
+
     }
     const addBook = () => {
         dispatch(addToCart(obj))

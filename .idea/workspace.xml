@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="delete variable">
-      <change afterPath="$PROJECT_DIR$/src/components/Alert/Alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card/CartContainer.jsx" afterDir="false" />
+    <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Alert/Alert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Alert/Alert.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Alert/AlertContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/alert-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Alert/Alert.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/CartContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/CartContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/books.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/books-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/books-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/cart-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/cart-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +120,9 @@
       <workItem from="1610289863224" duration="3000" />
       <workItem from="1610307334169" duration="166000" />
       <workItem from="1610442268878" duration="6762000" />
-      <workItem from="1610523041436" duration="3154000" />
+      <workItem from="1610523041436" duration="30974000" />
+      <workItem from="1610693792340" duration="10444000" />
+      <workItem from="1610774849770" duration="11543000" />
     </task>
     <task id="LOCAL-00001" summary="delete variable">
       <created>1610289549489</created>
@@ -123,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610445698505</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change Route path">
+      <created>1610526449368</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610526449368</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete variable" />
+    <MESSAGE value="change Route path" />
+    <option name="LAST_COMMIT_MESSAGE" value="change Route path" />
   </component>
 </project>

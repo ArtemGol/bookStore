@@ -40,6 +40,7 @@ const MenuComponent = () => {
                 </Menu.Item>
 
                 <NavLink to='/cart'>
+
                     <Popup
                         trigger={
                             <Menu.Item name='cart' onClick={handleItemClick}

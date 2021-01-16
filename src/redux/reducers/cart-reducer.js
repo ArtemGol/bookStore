@@ -1,12 +1,10 @@
+import {ADD_TO_CART, REMOVE_FROM_CART, REMOVE_ONE_PRODUCT} from "../actions/cart";
+
 const initialState = {
     count: 0,
     totalPrice: 0,
     items: []
 }
-
-export const ADD_TO_CART = 'ADD_TO_CART'
-export const REMOVE_FROM_CART = 'REMOVE_FROM_CART'
-export const REMOVE_ONE_PRODUCT = 'REMOVE_ONE_PRODUCT'
 
 const cartReducer = (state = initialState, action) => {
     switch (action.type) {
