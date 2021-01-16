@@ -1,4 +1,6 @@
-import {ADD_TO_CART, REMOVE_FROM_CART, REMOVE_ONE_PRODUCT} from "../reducers/cart-reducer";
+export const ADD_TO_CART = 'ADD_TO_CART'
+export const REMOVE_FROM_CART = 'REMOVE_FROM_CART'
+export const REMOVE_ONE_PRODUCT = 'REMOVE_ONE_PRODUCT'
 
 export const addToCart = (obj) => ({
     type: ADD_TO_CART,

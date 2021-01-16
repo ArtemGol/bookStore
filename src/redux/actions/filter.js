@@ -1,4 +1,6 @@
-import {SEARCH_BOOK, SET_FILTER, SET_SEARCH} from "../reducers/books-reducer";
+export const SET_FILTER = 'SET_FILTER'
+export const SEARCH_BOOK = 'SEARCH_BOOK'
+export const SET_SEARCH = 'SET_SEARCH'
 
 export const setFilter = (filter) => ({
     type: SET_FILTER,

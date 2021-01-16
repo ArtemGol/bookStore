@@ -1,0 +1,10 @@
+.alert{
+    position: fixed;
+    left: 86%;
+    top: 50px;
+    z-index: 1;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

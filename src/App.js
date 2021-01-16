@@ -4,23 +4,22 @@ import Store from "./components/Store/Store"
 import AdminPanel from "./components/AdminPanel/AdminPanel"
 import Menu from "./components/Menu/Menu"
 import {Route, Switch} from "react-router-dom"
-import {useSelector} from "react-redux"
-import CartContainer from "./components/Card/CartContainer";
+import CartContainer from "./components/Card/CartContainer"
+import AlertContainer from "./components/Alert/AlertContainer"
 
 const App = () => {
-    // const items = useSelector(state => uniqBy(state.cartReducer.items, o => o.id)) удаляет одинаковые id и возвращает 1
-    const items = useSelector(state => state.cartReducer.items)
-    return (
+    return (<div className='container'>
         <Container>
             <Menu />
+           <AlertContainer/>
             <Switch>
                 <Route exact path='/' render={() => <Store/>}/>
                 <Route path='/admin' render={() => <AdminPanel/>}/>
-                <Route path='/cart' render={() => <CartContainer items={items}/>}/>
+                <Route path='/cart' render={() => <CartContainer/>}/>
                 <Route path='*' render={() => <div><b>Error 404 not found</b></div>}/>
             </Switch>
-        </Container>
+        </Container> </div>
     )
 }
 
-export default App;
+export default App

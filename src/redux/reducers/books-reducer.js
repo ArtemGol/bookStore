@@ -1,4 +1,6 @@
 import {sortBy} from "../../utils/Redux-Helper";
+import {SET_BOOKS} from "../actions/books";
+import {SEARCH_BOOK, SET_FILTER, SET_SEARCH} from "../actions/filter";
 
 const initialState = {
     isReady: false,
@@ -7,12 +9,6 @@ const initialState = {
     filterBy: 'All',
     search: ''
 }
-
-export const SET_BOOKS = 'SET_BOOKS'
-export const SET_IS_READY = 'SET_IS_READY'
-export const SET_FILTER = 'SET_FILTER'
-export const SEARCH_BOOK = 'SEARCH_BOOK'
-export const SET_SEARCH = 'SET_SEARCH'
 
 const booksReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -28,11 +24,6 @@ const booksReducer = (state = initialState, action) => {
                 ...state,
                 filterBy: action.payload,
                 items: sortBy(state.filterItems, action.payload)
-            }
-        case SET_IS_READY:
-            return {
-                ...state,
-                isReady: action.payload
             }
         case SEARCH_BOOK:
             return {

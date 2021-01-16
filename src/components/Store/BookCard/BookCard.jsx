@@ -3,6 +3,7 @@ import {Card, Image, Icon, Button} from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart} from "../../../redux/actions/cart";
+import {showAlert} from "../../../redux/actions/alert";
 
 const BookCard = (book) => {
     const {title, author, image, price, id} = book
@@ -10,7 +11,9 @@ const BookCard = (book) => {
     let dispatch = useDispatch()
     const addBook = () => {
         dispatch(addToCart(book))
+        addedCount===0 && dispatch(showAlert('Item added to cart', 'green', 1))
     }
+
     return (
         <Card>
             <Image src={image} wrapped ui={false}/>

@@ -1,5 +1,6 @@
-import {SET_BOOKS} from "../reducers/books-reducer";
-import {booksAPI} from "../../api/api";
+import {booksAPI} from "../../api/api"
+
+export const SET_BOOKS = 'SET_BOOKS'
 
 export const setBooks = (items) => ({
     type: SET_BOOKS,
