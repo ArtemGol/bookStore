@@ -1,0 +1,19 @@
+.formControl.error{
+    position: relative;
+}
+
+.textAreaImg{
+    position: absolute;
+    margin-top: 14px;
+    left: 210px;
+    height: 50%;
+
+}
+
+.inputImg{
+    position: absolute;
+    left: 97%;
+    top: 5px;
+    height: 25px;
+    z-index: 1;
+}
