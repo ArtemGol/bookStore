@@ -10,7 +10,7 @@ const CardMainComponent = ({title, id, image, author, price}) => {
     let items = useSelector(state => state.cartReducer.items)
     let obj = {title, id, image, author, price}
 
-    let deleteBook = () => {
+    const removeMinusOneBookFromCart = () => {
         if (addedCount!==1) {
             dispatch(removeOneProduct(obj))
         }
@@ -21,10 +21,8 @@ const CardMainComponent = ({title, id, image, author, price}) => {
                 dispatch(showAlert('Cart is clear', 'blue', 3))
             }
         }
-    console.log(items)
-
     }
-    const addBook = () => {
+    const addPlusOneBookInCart = () => {
         dispatch(addToCart(obj))
     }
     return (
@@ -45,10 +43,10 @@ const CardMainComponent = ({title, id, image, author, price}) => {
             </Card.Content>
                 <Card.Content extra>
                     <div className='ui two buttons'>
-                        <Button basic color='red' onClick={deleteBook}>
+                        <Button basic color='red' onClick={removeMinusOneBookFromCart}>
                             Delete
                         </Button>
-                        <Button basic color='green' onClick={addBook}>
+                        <Button basic color='green' onClick={addPlusOneBookInCart}>
                             Add
                         </Button>
                     </div>

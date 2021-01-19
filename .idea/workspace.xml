@@ -2,27 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Alert/Alert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Alert/Alert.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Alert/AlertContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/alert-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddItemForm/AddItemForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddItemFormContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddedItemFormContainer.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/CheckAndSaveAddingItem/CheckAndSaveAddingItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/AdminMenu/AdminMenu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/EditItem/EditItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/Open/Open.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/SaveItem/SaveItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/FormControl/FormControl.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/FormControl/FormControl.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/admin-reduser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Validators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Alert/Alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Preloader/Preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Preloader/Preloader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AdminPanel/AdminPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdminPanel/AdminPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Alert/Alert.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Alert/Alert.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/CartContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/CartContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/books.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Store/Filter/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/Filter/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Store/Store.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/Store.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/filter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/books-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/books-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/cart-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/cart-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../01-first-project/my-app" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,11 +84,11 @@
       <recent name="C:\react11\projects\second-project\src\redux\actions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\react11\projects\second-project\src\components\Alert" />
+      <recent name="C:\react11\projects\second-project\src\components\AdminPanel\AddFormContainer" />
       <recent name="C:\react11\projects\second-project\src\components" />
-      <recent name="C:\react11\projects\second-project\src\components\Store\NotFound" />
-      <recent name="C:\react11\projects\second-project\src\components\Store\Menu" />
-      <recent name="C:\react11\projects\second-project\src\components\Store\Filter" />
+      <recent name="C:\react11\projects\second-project\src\components\AdminPanel\AddItemForm" />
+      <recent name="C:\react11\projects\second-project\src\components\AdminPanel\AdminMenu" />
+      <recent name="C:\react11\projects\second-project\src\components\AdminPanel" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -122,7 +133,11 @@
       <workItem from="1610442268878" duration="6762000" />
       <workItem from="1610523041436" duration="30974000" />
       <workItem from="1610693792340" duration="10444000" />
-      <workItem from="1610774849770" duration="11543000" />
+      <workItem from="1610774849770" duration="22303000" />
+      <workItem from="1610871115935" duration="16538000" />
+      <workItem from="1610951358144" duration="633000" />
+      <workItem from="1610963254838" duration="1165000" />
+      <workItem from="1611037859740" duration="31990000" />
     </task>
     <task id="LOCAL-00001" summary="delete variable">
       <created>1610289549489</created>
@@ -145,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610526449368</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add UI cart status">
+      <created>1610787233147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610787233147</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +188,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete variable" />
     <MESSAGE value="change Route path" />
-    <option name="LAST_COMMIT_MESSAGE" value="change Route path" />
+    <MESSAGE value="add UI cart status" />
+    <option name="LAST_COMMIT_MESSAGE" value="add UI cart status" />
   </component>
 </project>

@@ -5,15 +5,15 @@ import NotFound from "./NotFound/NotFound"
 import React, {useEffect} from "react"
 import {useDispatch, useSelector} from "react-redux"
 import {getBooks} from "../../redux/actions/books"
-import Preloader from "../../common/Preloader/Preloader"
+import Preloader from "../common/Preloader/Preloader"
 
 const Store = () => {
-    const {items: books, isReady, filterBy, search} = useSelector(state => state.booksReducer)
+    const {items: books, isReady, filterBy} = useSelector(state => state.booksReducer)
 
     const dispatch = useDispatch()
     useEffect(
         () => {
-            dispatch(getBooks(books))
+            books.length === 0 && dispatch(getBooks(books))
         }, []
     )
 
@@ -22,10 +22,10 @@ const Store = () => {
     }
     return (
         <div>
-            <Filter filterBy={filterBy} search={search} books={books}/>
+            <Filter filterBy={filterBy}/>
             <br/>
             <Card.Group itemsPerRow={4}>
-                {books.length > 0
+                {books && books.length > 0
                     ? books.map((book, i) =>
                         <BookCard key={i} {...book}/>)
                     : <Container>

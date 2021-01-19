@@ -1,11 +1,12 @@
 import {sortBy} from "../../utils/Redux-Helper";
 import {SET_BOOKS} from "../actions/books";
-import {SEARCH_BOOK, SET_FILTER, SET_SEARCH} from "../actions/filter";
+import {SEARCH_BOOK, SET_FILTER} from "../actions/filter";
+import {ADD_NEW_BOOK, DELETE_BOOK} from "../actions/admin";
 
 const initialState = {
     isReady: false,
-    items: null,
-    filterItems: null,
+    items: [],
+    filterItems: [],
     filterBy: 'All',
     search: ''
 }
@@ -32,10 +33,17 @@ const booksReducer = (state = initialState, action) => {
                     state.filterItems.filter(u => u.title.toLowerCase().indexOf(action.search.toLowerCase()) > -1 ||
                     u.author.toLowerCase().indexOf(action.search.toLowerCase()) > -1), state.filterBy)
             }
-        case SET_SEARCH:
+        case ADD_NEW_BOOK:
             return {
                 ...state,
-                search: action.search
+                items: [...state.items, action.item],
+                filterItems: [...state.filterItems, action.item]
+            }
+        case DELETE_BOOK:
+            return {
+                ...state,
+                items: state.items.filter(item => item.id !== action.id),
+                filterItems: state.filterItems.filter(item => item.id !== action.id)
             }
         default:
             return state

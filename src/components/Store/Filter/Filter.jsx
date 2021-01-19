@@ -1,32 +1,24 @@
-import React, {useState} from 'react'
-import {Icon, Input, Menu} from 'semantic-ui-react'
+import React, {useState, useEffect} from 'react'
+import {Input, Menu} from 'semantic-ui-react'
 import {useDispatch} from "react-redux";
-import {searchBook, setFilter, setSearch} from "../../../redux/actions/filter"
+import {searchBook, setFilter} from "../../../redux/actions/filter"
 
-const Filter = ({filterBy, search, books}) => {
-    let [changeSearch, setChangeSearch] = useState(null)
-    let dispatch = useDispatch()
+const Filter = ({filterBy}) => {
+    useEffect(() => {
+        dispatch(setFilter('All'))
+    }, [])
+
+    const [localSearch, setLocalSearch] = useState(null)
+
+    const dispatch = useDispatch()
     const bookSearch = (e) => {
         dispatch(searchBook(e.target.value))
-        setChangeSearch(e.target.value)
+        setLocalSearch(e.target.value)
     }
-    const resetSearch = () => {
-        dispatch(setSearch(''))
-        dispatch(setFilter(filterBy))
-        setChangeSearch('')
-    }
-    const handleEnterSearch = (e) => {
-        if (e.key === 'Enter' && books.length > 0) {
-            dispatch(setSearch(e.target.value))
-            e.target.value = ''
-        }
-        if (e.key === 'Enter' && books.length === 0) {
-            alert('Nothing was found on your request. Please looking for something else')
-        }
-    }
+
     const handleItemClick = (e, {name}) => {
         dispatch(setFilter(name))
-        changeSearch && dispatch(searchBook(changeSearch))
+        localSearch && dispatch(searchBook(localSearch))
     }
     return (
         <Menu secondary>
@@ -51,17 +43,10 @@ const Filter = ({filterBy, search, books}) => {
                 onClick={handleItemClick}
             />
             <Menu.Menu position='right'>
-                {search
-                    ? <Menu.Item>
-                        You are looking for a title or your title contains letter(s):&ensp;
-                        <b>{search[0].toUpperCase() + search.slice(1)}</b>
-                        &ensp;<Icon onClick={resetSearch} link name='delete' size='large'/>
-                    </Menu.Item>
-                    : <Menu.Item>
-                        <Input icon='search' type='search' placeholder='Search...' onKeyUp={handleEnterSearch}
-                               onChange={bookSearch}/>
-                    </Menu.Item>
-                }
+                <Menu.Item>
+                    <Input icon='search' type='search' placeholder='Search...'
+                           onChange={bookSearch}/>
+                </Menu.Item>
             </Menu.Menu>
         </Menu>
     )
