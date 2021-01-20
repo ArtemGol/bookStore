@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddItemForm/AddItemForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddItemFormContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddedItemFormContainer.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/CheckAndSaveAddingItem/CheckAndSaveAddingItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/AdminMenu/AdminMenu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/EditItem/EditItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/Open/Open.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel/SaveItem/SaveItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/FormControl/FormControl.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/FormControl/FormControl.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/admin-reduser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Validators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Preloader/Preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Preloader/Preloader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AdminPanel/AdminPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdminPanel/AdminPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Alert/Alert.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Alert/Alert.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Store/Filter/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/Filter/Filter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Store/Store.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/Store.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/books-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/books-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
-    </list>
+    <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,6 +105,7 @@
       <workItem from="1610951358144" duration="633000" />
       <workItem from="1610963254838" duration="1165000" />
       <workItem from="1611037859740" duration="31990000" />
+      <workItem from="1611172077030" duration="316000" />
     </task>
     <task id="LOCAL-00001" summary="delete variable">
       <created>1610289549489</created>
