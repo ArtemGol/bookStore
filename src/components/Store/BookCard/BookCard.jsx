@@ -30,7 +30,7 @@ const BookCard = (book) => {
                 </Card.Meta>
             </Card.Content>
             <Card.Content extra>
-                <a>
+                <a href='##'>
                     <Icon name='rub'/>
                     {price}
                 </a>

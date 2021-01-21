@@ -14,6 +14,7 @@ const Store = () => {
     useEffect(
         () => {
             books.length === 0 && dispatch(getBooks(books))
+            //eslint-disable-next-line
         }, []
     )
 

@@ -4,9 +4,12 @@ import {useDispatch} from "react-redux";
 import {searchBook, setFilter} from "../../../redux/actions/filter"
 
 const Filter = ({filterBy}) => {
+
     useEffect(() => {
         dispatch(setFilter('All'))
+        //eslint-disable-next-line
     }, [])
+
 
     const [localSearch, setLocalSearch] = useState(null)
 

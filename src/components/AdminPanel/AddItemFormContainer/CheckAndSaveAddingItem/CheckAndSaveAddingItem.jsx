@@ -4,6 +4,7 @@ import {Button, Card, Icon, Image} from "semantic-ui-react";
 const CheckAndSaveAddingItem = ({image, title, author, price, setActiveMode}) => {
     useEffect(() => {
         image === undefined && setActiveMode(false)
+        //eslint-disable-next-line
     }, [image])
     const backToForm = () => {
         setActiveMode(false)
@@ -18,7 +19,7 @@ const CheckAndSaveAddingItem = ({image, title, author, price, setActiveMode}) =>
                 </Card.Meta>
             </Card.Content>
             <Card.Content extra>
-                <a>
+                <a href='##'>
                     <Icon name='rub'/>
                     {price}
                 </a>

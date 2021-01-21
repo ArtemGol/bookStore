@@ -1,6 +1,6 @@
 import {useSelector} from "react-redux"
 import {Image, List} from "semantic-ui-react";
-import React, {useState} from "react"
+import React from "react"
 
 const CartComponent = ({title, id, image}) => {
     const addedCount = useSelector(state => state.cartReducer.items.reduce((count, book) => count + (book.id === id ? book.count : 0), 0))
