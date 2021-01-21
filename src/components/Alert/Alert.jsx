@@ -8,6 +8,7 @@ const Alert = (item) => {
     const dispatch = useDispatch()
     useEffect(() => {
         setTimeout(function(){  dispatch(hideAlert(item.payload.id)) }, 1500)
+        //eslint-disable-next-line
     }, [])
 
     return (

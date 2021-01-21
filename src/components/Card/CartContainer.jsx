@@ -10,7 +10,7 @@ const CartContainer = () => {
         <Card.Group itemsPerRow={5}>
             {
                 items.map(book =>
-                    <CardMainComponent {...book.product}/>)
+                    <CardMainComponent key={book.product.id} {...book.product}/>)
             }
         </Card.Group>
     )

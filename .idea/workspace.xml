@@ -4,8 +4,12 @@
     <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddItemFormContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddItemFormContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/cart-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/cart-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/CartComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/CartComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/CartContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/CartContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Store/Filter/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/Filter/Filter.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +116,7 @@
       <workItem from="1611037859740" duration="31990000" />
       <workItem from="1611172077030" duration="316000" />
       <workItem from="1611173532098" duration="478000" />
-      <workItem from="1611210664129" duration="363000" />
+      <workItem from="1611210664129" duration="1685000" />
     </task>
     <task id="LOCAL-00001" summary="delete variable">
       <created>1610289549489</created>
@@ -142,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610787233147</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add UI cart status">
+      <created>1611211069226</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611211069226</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
