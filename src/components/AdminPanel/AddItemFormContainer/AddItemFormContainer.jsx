@@ -9,8 +9,8 @@ import styles from './AddedItemFormContainer.module.css'
 const AddItemFormContainer = ({...item}) => {
     const [activeMode, setActiveMode] = useState(false)
     const dispatch = useDispatch()
-    const onSubmit = ({title, author, image, price}) => {
-        let obj = {id: uuidv1(), title, author, image, price : Number(price), rating: 5}
+    const onSubmit = ({...formData}) => {
+        let obj = {id: uuidv1(), ...formData, rating: 5}
         console.log(obj)
         dispatch(setItem(obj))
         setActiveMode(true)

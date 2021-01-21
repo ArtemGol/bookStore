@@ -8,17 +8,11 @@ const initialState = {
 
 const cartReducer = (state = initialState, action) => {
     switch (action.type) {
-
-        // case ADD_TO_CART:
-        //     return {
-        //         ...state,
-        //         items: [...state.items, action.payload]
-        //     }
         case ADD_TO_CART:
             return {
                 ...state,
                 count: state.count + 1,
-                totalPrice: state.totalPrice + action.payload.price,
+                totalPrice: state.totalPrice + Number(action.payload.price),
                 items: state.items.findIndex((item) => item.id === action.payload.id) === -1
                     ? [...state.items,
                         {
