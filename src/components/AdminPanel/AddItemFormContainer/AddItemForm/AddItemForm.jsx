@@ -13,11 +13,11 @@ const AddItemForm = ({handleSubmit}) => {
             <Form onSubmit={handleSubmit}>
                 <Form.Field>
                     <label>Title</label>
-                    {createField('Title...', "title", [required, maxLength1000], InputComponent, {type: "text"})}
+                    {createField('Full book title', "title", [required, maxLength1000], InputComponent, {type: "text"})}
                 </Form.Field>
                 <Form.Field>
                     <label>Author</label>
-                    {createField('Author...', "author", [required, maxLength1000], InputComponent, {type: "text"})}
+                    {createField('Full name of author', "author", [required, maxLength1000], InputComponent, {type: "text"})}
                 </Form.Field>
                 <Form.Field>
                     <label>Image</label>

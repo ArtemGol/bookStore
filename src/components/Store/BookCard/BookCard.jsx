@@ -5,9 +5,10 @@ import {useDispatch, useSelector} from "react-redux"
 import {addToCart} from "../../../redux/actions/cart"
 import {showAlert} from "../../../redux/actions/alert"
 import styles from './BookCard.module.css'
-import {deleteBook} from "../../../redux/actions/admin";
+import {deleteBook} from "../../../redux/actions/admin"
+import {setCurrentPage} from "../../../redux/actions/pagination";
 
-const BookCard = (book) => {
+const BookCard = ({book, books, currentPage}) => {
     const {title, author, image, price, id} = book
     const addedCount = useSelector(state => state.cartReducer.items.reduce((count, book) => count + (book.id === id ? book.count : 0), 0))
     let dispatch = useDispatch()
@@ -18,6 +19,9 @@ const BookCard = (book) => {
     const deleteItem = () => {
         dispatch(deleteBook(id))
         dispatch(showAlert('Item was deleted', 'green', 5))
+        if (books.length === 1) {
+            dispatch(setCurrentPage(currentPage - 1))
+        }
     }
 
     return (

@@ -13,22 +13,15 @@ const MenuComponent = () => {
     const items = useSelector(state => state.cartReducer.items)
 
     const handleItemClick = (e, {name}) => setState(name)
-
-    const name = state
     return (
         <Menu>
-            <NavLink exact to='/'>
-                <Menu.Item name='store' onClick={handleItemClick}
-                           active={name === 'store'}
-                >
-
+            <NavLink to={'/store'}>
+                <Menu.Item name='store' onClick={handleItemClick} active={state === 'store'}>
                     Books store
                 </Menu.Item>
             </NavLink>
             <NavLink to='/admin'>
-                <Menu.Item name='admin' onClick={handleItemClick}
-                           active={name === 'admin'}
-                >
+                <Menu.Item name='admin' onClick={handleItemClick} active={state === 'admin'}>
                     Admin panel
                 </Menu.Item>
             </NavLink>
@@ -44,12 +37,12 @@ const MenuComponent = () => {
                     <Popup
                         trigger={
                             <Menu.Item name='cart' onClick={handleItemClick}
-                                       active={name === 'cart'}
+                                       active={state === 'cart'}
                             >
                                 Cart: &ensp;<b>{count}</b>
                             </Menu.Item>
                         }
-                        content={items.map(book => <CartComponent {...book.product}/>)}
+                        content={items.map(book => <CartComponent key={book.id} {...book.product}/>)}
                         on='click'
                         hideOnScroll/>
                             </NavLink>
