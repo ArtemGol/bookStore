@@ -36,7 +36,7 @@ const CardMainComponent = ({title, id, image, author, price}) => {
                 </Card.Meta>
             </Card.Content>
             <Card.Content extra>
-                <a href='#'>
+                <a href='##'>
                     <Icon name='rub'/>
                     {addedCount > 0 ? price * addedCount : price}({addedCount})
                 </a>

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {Input, Menu} from 'semantic-ui-react'
 import {useDispatch} from "react-redux";
 import {searchBook, setFilter} from "../../../redux/actions/filter"
+import {setCurrentPage, setTotalItemCount} from "../../../redux/actions/pagination";
 
 const Filter = ({filterBy}) => {
 
@@ -14,9 +15,11 @@ const Filter = ({filterBy}) => {
     const [localSearch, setLocalSearch] = useState(null)
 
     const dispatch = useDispatch()
-    const bookSearch = (e) => {
+    const bookSearch = async (e) => {
+        dispatch(setCurrentPage(1))
         dispatch(searchBook(e.target.value))
         setLocalSearch(e.target.value)
+        await dispatch(setTotalItemCount())
     }
 
     const handleItemClick = (e, {name}) => {
