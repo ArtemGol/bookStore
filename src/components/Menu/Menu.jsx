@@ -8,14 +8,12 @@ import CartComponent from "../Card/CartComponent";
 const MenuComponent = () => {
     let [state, setState] = useState('')
     // const totalPrice = useSelector(state => state.cartReducer.items.reduce((total, book) => total + book.product.price, 0)) сумма объектов массива
-    const totalPrice = useSelector(state => state.cartReducer.totalPrice)
-    const count = useSelector(state => state.cartReducer.count)
-    const items = useSelector(state => state.cartReducer.items)
+    const {totalPrice, count, items} = useSelector(state => state.cartReducer)
 
     const handleItemClick = (e, {name}) => setState(name)
     return (
         <Menu>
-            <NavLink to={'/store'}>
+            <NavLink to={`/store`}>
                 <Menu.Item name='store' onClick={handleItemClick} active={state === 'store'}>
                     Books store
                 </Menu.Item>

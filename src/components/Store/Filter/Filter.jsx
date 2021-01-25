@@ -4,18 +4,34 @@ import {useDispatch} from "react-redux";
 import {searchBook, setFilter} from "../../../redux/actions/filter"
 import {setCurrentPage, setTotalItemCount} from "../../../redux/actions/pagination";
 
-const Filter = ({filterBy}) => {
+const Filter = ({filterBy, query, history}) => {
 
     useEffect(() => {
         dispatch(setFilter('All'))
+        dispatch(searchBook(query.get('searchText') || ""))
+        dispatch(setTotalItemCount())
         //eslint-disable-next-line
     }, [])
 
 
     const [localSearch, setLocalSearch] = useState(null)
 
+
     const dispatch = useDispatch()
     const bookSearch = async (e) => {
+        query.delete('page')
+
+        if(!query.has('searchText') && e.target.value) {
+            query.append('searchText', e.target.value)
+            history.push(`?${query.toString()}`)
+        } else if(query.has('searchText') && e.target.value) {
+            query.set('searchText', e.target.value)
+            history.push(`?${query.toString()}`)
+        } else {
+            query.delete('searchText')
+            history.push(`?${query.toString()}`)
+        }
+
         dispatch(setCurrentPage(1))
         dispatch(searchBook(e.target.value))
         setLocalSearch(e.target.value)
@@ -50,7 +66,7 @@ const Filter = ({filterBy}) => {
             />
             <Menu.Menu position='right'>
                 <Menu.Item>
-                    <Input icon='search' type='search' placeholder='Search...'
+                    <Input icon='search' value={query.get('searchText') || ""} type='search' placeholder='Search...'
                            onChange={bookSearch}/>
                 </Menu.Item>
             </Menu.Menu>
