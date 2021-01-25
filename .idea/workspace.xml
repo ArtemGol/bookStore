@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="adding of pagination">
-      <change afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/hooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddItemForm/AddItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddItemForm/AddItemForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddItemFormContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdminPanel/AddItemFormContainer/AddItemFormContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Store/Filter/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/Filter/Filter.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Store/Store.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/Store.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/books-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/books-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dex-demo2-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -127,7 +125,10 @@
       <workItem from="1611173532098" duration="478000" />
       <workItem from="1611210664129" duration="2400000" />
       <workItem from="1611224834182" duration="7560000" />
-      <workItem from="1611299557901" duration="27926000" />
+      <workItem from="1611299557901" duration="28879000" />
+      <workItem from="1611392546100" duration="13553000" />
+      <workItem from="1611472366774" duration="698000" />
+      <workItem from="1611561408563" duration="20245000" />
     </task>
     <task id="LOCAL-00001" summary="delete variable">
       <created>1610289549489</created>
@@ -171,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611212678248</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding of pagination">
+      <created>1611335105270</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611335105270</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +202,7 @@
     <MESSAGE value="change Route path" />
     <MESSAGE value="add UI cart status" />
     <MESSAGE value="fix the warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix the warnings" />
+    <MESSAGE value="adding of pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding of pagination" />
   </component>
 </project>

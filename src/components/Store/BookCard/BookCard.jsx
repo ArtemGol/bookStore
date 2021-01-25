@@ -6,21 +6,28 @@ import {addToCart} from "../../../redux/actions/cart"
 import {showAlert} from "../../../redux/actions/alert"
 import styles from './BookCard.module.css'
 import {deleteBook} from "../../../redux/actions/admin"
-import {setCurrentPage} from "../../../redux/actions/pagination";
+import {setCurrentPage} from "../../../redux/actions/pagination"
 
-const BookCard = ({book, books, currentPage}) => {
+const BookCard = ({book, books, currentPage, query, history}) => {
     const {title, author, image, price, id} = book
     const addedCount = useSelector(state => state.cartReducer.items.reduce((count, book) => count + (book.id === id ? book.count : 0), 0))
     let dispatch = useDispatch()
     const addBook = () => {
         dispatch(addToCart(book))
-        addedCount===0 && dispatch(showAlert('Item added to cart', 'green', 1))
+        addedCount === 0 && dispatch(showAlert('Item added to cart', 'green', 1))
     }
     const deleteItem = () => {
         dispatch(deleteBook(id))
         dispatch(showAlert('Item was deleted', 'green', 5))
         if (books.length === 1) {
             dispatch(setCurrentPage(currentPage - 1))
+            if (currentPage > 2) {
+                query.set('page', currentPage - 1)
+                history.push(`?${query.toString()}`)
+            } else {
+                query.delete('page')
+                history.push(`?${query.toString()}`)
+            }
         }
     }
 
