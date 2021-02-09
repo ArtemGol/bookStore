@@ -9,3 +9,13 @@ export const booksAPI = {
     }
 
 }
+
+export const authAPI = {
+    login(email, password) {
+        return axios.post('https://reqres.in/api/login', {
+            email, password
+        }).then(response => {
+            return response.data
+        })
+    }
+}
