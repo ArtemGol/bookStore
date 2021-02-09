@@ -1,0 +1,22 @@
+.button{
+    width: 250px;
+}
+.buttons{
+    position: absolute;
+    top: 90%;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.book{
+    display: inline-flex;
+    flex-direction: column;
+}
+.book div {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}

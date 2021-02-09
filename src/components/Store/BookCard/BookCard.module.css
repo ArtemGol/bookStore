@@ -1,10 +1,17 @@
-.deleteItem{
+.actionIcons{
     position: absolute;
-    left: 90%;
+    display: flex;
+    right: 1px;
     top: 5px;
-    background-color: rgba(240,248,255,0.3);
 }
-.deleteItem:hover{
+.icon{
+    background-color: rgba(240,248,255,0.3);
+    cursor: pointer;
+}
+.icon:hover{
     transition: 1s;
     background-color: rgba(240,248,255,1);
+}
+.image{
+    cursor: pointer;
 }

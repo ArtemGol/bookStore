@@ -1,0 +1,10 @@
+.loginForm{
+    top:50%;
+    left:50%;
+    transform:translate(-50%, 40%);
+    width: 300px;
+}
+.message{
+    text-align: center;
+    margin: 10px;
+}
