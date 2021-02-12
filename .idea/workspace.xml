@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="">
+    <list default="true" id="0b8effdb-4955-456e-b244-3ce13e89e1dc" name="Default Changelist" comment="With Typescript">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/BookCard/BookCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Store/Filter/Filter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/Filter/Filter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Store/Store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store/Store.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +139,7 @@
       <workItem from="1612780413272" duration="70000" />
       <workItem from="1612851666560" duration="39279000" />
       <workItem from="1613045153616" duration="769000" />
-      <workItem from="1613116405380" duration="399000" />
+      <workItem from="1613116405380" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="delete variable">
       <created>1610289549489</created>
@@ -207,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612895864154</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="With Typescript">
+      <created>1613116859573</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1613116859573</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +236,7 @@
     <MESSAGE value="fix the warnings" />
     <MESSAGE value="adding of pagination" />
     <MESSAGE value="Url search &amp; pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Url search &amp; pagination" />
+    <MESSAGE value="With Typescript" />
+    <option name="LAST_COMMIT_MESSAGE" value="With Typescript" />
   </component>
 </project>

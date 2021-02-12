@@ -7,4 +7,6 @@
 .message{
     text-align: center;
     margin: 10px;
+    font-weight: bold;
+    background-color: lightpink;
 }
