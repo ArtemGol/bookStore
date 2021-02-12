@@ -8,7 +8,7 @@ type PaginatorType = {
     totalItemsCount: number
     pageSize: number
     currentPage: number
-    query: any
+    query: URLSearchParams
     history: any
 }
 

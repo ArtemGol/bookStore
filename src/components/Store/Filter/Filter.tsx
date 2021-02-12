@@ -6,7 +6,7 @@ import {setCurrentPage, setTotalItemCount} from "../../../redux/actions/paginati
 
 type FilterComponentType = {
     filterBy: string
-    query: any
+    query: URLSearchParams
     history: any
 }
 

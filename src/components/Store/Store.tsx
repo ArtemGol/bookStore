@@ -23,7 +23,7 @@ export const Store: FC = () => {
 
     const books = useSelector((state: AppStateType) => state.booksReducer.items.slice(FirstPageItem, LastPageItem))
 
-    const query: any = useQuery()
+    const query: URLSearchParams = useQuery()
     const history = useHistory()
 
     const dispatch = useDispatch()
