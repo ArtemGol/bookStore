@@ -14,7 +14,7 @@ type BookCardType = {
     book: ItemType
     books: Array<ItemType>
     currentPage: number
-    query: any
+    query: URLSearchParams
     history: any
     isAuth: boolean
 }
@@ -33,7 +33,7 @@ export const BookCard: FC<BookCardType> = ({book, books, currentPage, query, his
         if (books.length === 1) {
             dispatch(setCurrentPage(currentPage - 1))
             if (currentPage > 2) {
-                query.set('page', currentPage - 1)
+                query.set('page', String(currentPage - 1))
                 history.push(`?${query.toString()}`)
             } else {
                 query.delete('page')
