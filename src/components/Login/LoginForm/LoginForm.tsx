@@ -25,7 +25,7 @@ const LoginForm: FC<InjectedFormProps<LoginFormValuesType, LoginFormOwnProps> & 
     return (
         <Segment compact className={styles.loginForm}>
             <div className={styles.message}>
-                enter 'eve.holt@reqres.in' <br/>
+                enter email: "eve.holt@reqres.in" <br/>
                 and any password
             </div>
             <Form onSubmit={handleSubmit}>
